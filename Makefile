@@ -28,7 +28,8 @@ serve: ## Serve as an application for local development.
 	lein serve
 
 deploy: ## Deploy static website assets to a Google Cloud Storage bucket.
-	gsutil -d -r output gs://pwalsh.me
+	gcloud components update --quiet
+	gsutil rsync -d -r output gs://pwalsh.me
 
 test: ## Run the tests.
 	lein test
