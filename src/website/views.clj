@@ -13,8 +13,8 @@
    [:meta {:name "viewport"
            :content "width=device-width, initial-scale=1, shrink-to-fit=no"}]
    [:title (str (:name context) "'s website.")]
-   (include-css "main.css")
-   (include-js "main.js")])
+   (include-css "/main.css")
+   (include-js "/main.js")])
 
 (defn header [context]
   [:div {:class "row align-items-center"}])
