@@ -31,5 +31,8 @@ deploy: ## Deploy static website assets to a Google Cloud Storage bucket.
 	gcloud components update --quiet
 	gsutil rsync -d -r output gs://pwalsh.me
 
+ci-deploy: ##
+	@if [ "${CIRCLE_BRANCH}" == "master" ]; then make deploy; else echo "No deploy"; fi
+
 test: ## Run the tests.
 	lein test

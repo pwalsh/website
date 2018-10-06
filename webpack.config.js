@@ -1,14 +1,14 @@
 const path = require('path');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
-const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
   mode: 'production',
   entry: './resources/frontend/index.js',
   output: {
     path: path.resolve(__dirname, 'resources', 'assets'),
-    filename: 'main.js',
+    filename: 'bundle.js',
     publicPath: '/'
   },
   optimization: {
@@ -23,7 +23,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "[name].css",
+      filename: "bundle.css",
       chunkFilename: "[id].css"
     })
   ],
@@ -55,9 +55,13 @@ module.exports = {
         ]
       },
       {
-        test: /\.(woff|woff2|eot|ttf|otf|svg|png)$/,
+        test: /\.(otf|eot|svg|ttf|woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
         use: [{
-          loader: 'file-loader'
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]?[hash]',
+            outputPath: 'fonts/'
+          }
         }]
       }
     ]
