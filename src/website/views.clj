@@ -23,7 +23,7 @@
 (defn footer [context]
   [:div {:class "row align-items-center"}
    [:div {:class "col"}
-    (str "&copy; " (t/year (t/now)) " " (:name context))]])
+    (str "&copy; 2018 - " (t/year (t/now)) " " (:name context))]])
 
 (defmulti main-content :view-name :default :not-found)
 
