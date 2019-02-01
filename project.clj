@@ -3,7 +3,7 @@
   :url "https://pwalsh.me"
   :license {:name "BSD 3 Clause"
             :url "http://opensource.org/licenses/BSD-3-Clause"}
-  :dependencies [[org.clojure/clojure "1.9.0"]
+  :dependencies [[org.clojure/clojure "1.10.0"]
                  [clj-time "0.14.4"]
                  [endophile "0.2.1"]
                  [environ "1.1.0"]
