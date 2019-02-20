@@ -10,6 +10,7 @@ install-backend: ## Install the Clojure backend dependencies.
 	lein deps
 
 install-frontend: ## Install the JavaScript frontend dependencies.
+	npm install
 
 install: install-backend install-frontend ## Install all dependencies.
 

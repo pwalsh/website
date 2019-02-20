@@ -55,9 +55,9 @@ module.exports = {
         ]
       },
       {
-        test: /\.(otf|eot|svg|ttf|woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
+        test: /\.(png|gif|jpe|jpg|woff|woff2|eot|ttf|svg)(\?.*$|$)?/,
         use: [{
-          loader: 'file-loader',
+          loader: 'url-loader',
           options: {
             name: '[name].[ext]?[hash]',
             outputPath: 'fonts/'

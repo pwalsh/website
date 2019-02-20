@@ -53,12 +53,12 @@
         [:i {:class "fa fa-at"}] " Email"]]]
      [:li {:class "list-group-item"}
       [:span
-       [:a {:href (:github context) :title "GitHub"}
-        [:i {:class "fa fa-github"}] " GitHub"]]]
-     [:li {:class "list-group-item"}
-      [:span
        [:a {:href (:twitter context) :title "Twitter"}
         [:i {:class "fa fa-twitter"}] " Twitter"]]]
+     [:li {:class "list-group-item"}
+      [:span
+       [:a {:href (:github context) :title "GitHub"}
+        [:i {:class "fa fa-github"}] " GitHub"]]]
      [:li {:class "list-group-item"}
       [:span
        [:a {:href (:keybase context) :title "Keybase"}
