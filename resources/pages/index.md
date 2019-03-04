@@ -5,7 +5,7 @@
 
 A technologist designing and delivering solutions for humans with data.
 
-I'm CEO at [Viderum](https://viderum.com), where we support governments, enterprise, and non-profits with products and services for data management. We are a team of 20+ passionate people who believe in exceptional service, default openness, and authentic interactions.
+I'm CEO at [Datopian](https://datopian.com), where we support governments, enterprise, and non-profits with products and services for data management. We are a team of 20+ passionate people who believe in exceptional service, default openness, and authentic interactions.
 
 Previously, I was Chief Product Officer at [Open Knowledge International](https://okfn.org), a global non-profit that works with government, business and civil society on open data and open knowledge projects towards data-driven social change.
 
